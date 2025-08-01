@@ -1,0 +1,22 @@
+cookies:
+  cookie_name: daleel_cookie
+  key: some_random_signature_key # Change this to a random string
+  expiry_days: 30
+
+credentials:
+  usernames:
+    # --- Employer Accounts ---
+    acme_admin:
+      email: admin@acme.com
+      name: Admin User
+      password: '$2b$12$xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' # Hashed password for 'pass123'
+      
+    # --- Talent Accounts ---
+    nora_talent:
+      email: nora@gmail.com
+      name: Nora Ekramy
+      password: '$2b$12$xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' # Hashed password for 'pass123'
+    ibrahim_talent:
+      email: ibrahim@outlook.com
+      name: Ibrahim Khairy
+      password: '$2b$12$xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' # Hashed password for 'pass123'

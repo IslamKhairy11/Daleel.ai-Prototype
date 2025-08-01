@@ -1,0 +1,10 @@
+# requirements.txt
+streamlit
+streamlit-authenticator
+pandas
+PyYAML
+pypdf
+openai
+streamlit-option-menu
+passlib
+bcrypt

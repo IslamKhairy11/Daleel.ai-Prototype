@@ -1,0 +1,16 @@
+# .gitignore
+
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Database file - The deployed app will create its own fresh DB
+daleel_users.db
+
+# Secrets file - NEVER commit API keys
+.streamlit/secrets.toml
