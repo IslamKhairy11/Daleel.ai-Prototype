@@ -24,8 +24,8 @@ font = "sans serif"
 # You can also specify dark theme overrides directly in a [darkTheme] section
 # but Streamlit's auto-generation for dark mode from the primary color is usually good.
 # For full control, you can add:
-# [darkTheme]
-# primaryColor = "#5130d6"
-# backgroundColor = "#0E1117" # A nice off-black
-# secondaryBackgroundColor = "#1E1E2E"
-# textColor = "#FFFFFF"
+[darkTheme]
+primaryColor = "#5130d6"
+backgroundColor = "#0E1117" # A nice off-black
+secondaryBackgroundColor = "#1E1E2E"
+textColor = "#FFFFFF"
