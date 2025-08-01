@@ -1,0 +1,31 @@
+# .streamlit/config.toml
+
+# This sets global options for the server
+[server]
+headless = true
+enableCORS = false
+port = 8501
+
+# This section controls the theme colors
+[theme]
+# Primary brand color for interactive elements
+primaryColor = "#5130d6"
+
+# Background colors
+backgroundColor = "#FFFFFF"  # Light theme background
+secondaryBackgroundColor = "#F0F2F6" # Light theme secondary bg (for sidebars, etc.)
+
+# Text colors
+textColor = "#000000" # Black text for light theme
+
+# Font
+font = "sans serif"
+
+# You can also specify dark theme overrides directly in a [darkTheme] section
+# but Streamlit's auto-generation for dark mode from the primary color is usually good.
+# For full control, you can add:
+# [darkTheme]
+# primaryColor = "#5130d6"
+# backgroundColor = "#0E1117" # A nice off-black
+# secondaryBackgroundColor = "#1E1E2E"
+# textColor = "#FFFFFF"
