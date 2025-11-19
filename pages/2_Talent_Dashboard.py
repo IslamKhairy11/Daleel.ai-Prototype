@@ -3,12 +3,10 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 import pypdf
 import io
-from utils.auth_utils import init_authenticator
 
 
 with st.sidebar:
-    st.title(f"Welcome, {st.session_state['name']}")
-    authenticator.logout("Logout") 
+    st.title(f"Welcome, Islam!")
 
 st.title(f"Welcome, Islam!")
 st.header("Your Career Digital Twin")
