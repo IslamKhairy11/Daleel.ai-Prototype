@@ -1,26 +1,8 @@
 # pages/3_Employer_Dashboard.py (Corrected with Two-Form Structure)
 import streamlit as st
 from mock_data import get_mock_candidates, get_mock_company
-from utils.auth_utils import init_authenticator
 from openai import OpenAI
 
-# Initialize authenticator
-if "authenticator" not in st.session_state:
-    st.session_state.authenticator = init_authenticator()
-authenticator = st.session_state.authenticator
-
-# --- Authentication check ---
-if not st.session_state.get("authentication_status"):
-    st.warning("Please login to access this page.")
-    st.switch_page("Home.py")
-    st.stop()
-if st.session_state.get("user_type") != 'employer':
-    st.error("Access Denied: This page is for employers only.")
-    st.stop()
-
-with st.sidebar:
-    st.title(f"Welcome, {st.session_state['name']}")
-    authenticator.logout("Logout")
 
 # --- Initialize session state for company and generated text ---
 if 'company_profile' not in st.session_state:
