@@ -10,7 +10,7 @@ with st.sidebar:
     st.title(f"Welcome, {st.session_state['name']}")
     authenticator.logout("Logout") 
 
-st.title(f"Welcome, {st.session_state['name']}!")
+st.title(f"Welcome, Islam!")
 st.header("Your Career Digital Twin")
 
 # --- Initialize session state for twin data ---
