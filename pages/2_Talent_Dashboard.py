@@ -6,15 +6,6 @@ import io
 from utils.auth_utils import init_authenticator
 
 
-if "authenticator" not in st.session_state:
-    st.switch_page("Home.py") # Fallback if user lands here directly
-authenticator = st.session_state.authenticator
-
-if not st.session_state.get("authentication_status"):
-    st.warning("Please login to access this page.")
-    st.switch_page("Home.py") # Redirect to home
-    st.stop()
-
 with st.sidebar:
     st.title(f"Welcome, {st.session_state['name']}")
     authenticator.logout("Logout") 
